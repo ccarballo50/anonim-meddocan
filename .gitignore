@@ -1,0 +1,40 @@
+# Entorno y ficheros temporales
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Datos pesados y privados (no subir datasets reales)
+WEB meddocan/
+meddocan.zip
+data/
+Resultados.xlsx
+
+# Modelos entrenados (pesados)
+modelo_anonim_v2/
+modelo_meddocan_safe/
+modelo_meddocan_safe_farmacos/
+models/
+
+# Builds y distribuciones
+build/
+dist/
+out/
+out_*/
+outputs_ner/
+
+# Experimentos y perfiles locales
+profiles/
+Pruebas/
+audit/
+
+# Binarios y wheels
+*.whl
+
+# Ficheros de empaquetado
+*.spec
+
+# Otros generados
+out_meddocan_full/
+out_real_model_vbest/
