@@ -42,3 +42,7 @@ dist/
 *.exe
 *.pkg
 
+data/in/*
+data/real/*
+*.xlsx
+*.xls
