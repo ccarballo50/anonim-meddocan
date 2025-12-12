@@ -36,3 +36,9 @@ configs/
 debug_* 
 testarmodelo.bat
 
+# Ignorar artefactos de compilación
+build/
+dist/
+*.exe
+*.pkg
+
