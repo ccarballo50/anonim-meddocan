@@ -14,6 +14,28 @@ El proyecto permite:
 
 ---
 
+## 🧪 Notebook de demostración (Google Colab)
+
+Este proyecto incluye un notebook de demostración utilizado exclusivamente para el **Trabajo Fin de Máster**.  
+Permite ejecutar ANONIM v2 con **datos sintéticos** para mostrar el flujo completo de anonimización.
+
+🔗 **Abrir Notebook en Google Colab:**  
+https://colab.research.google.com/drive/1RLlUBuLDNCC3J5sslut8Jt-reckdXmPl?usp=sharing
+
+---
+
+### ⚠️ Aviso legal importante (LOPD/RGPD)
+
+Este notebook de Google Colab **NO DEBE UTILIZARSE CON DATOS CLÍNICOS REALES**.  
+Google Colab procesa la información en servidores externos y, por tanto, **no cumple los requisitos de protección de datos sanitarios**.
+
+El notebook se ofrece exclusivamente como **demostración técnica para el TFM** utilizando datos sintéticos.
+
+Para uso clínico real, consulte la sección:
+
+➡️ **“ANONIM Local – Ejecución 100% LOPD segura en entorno hospitalario”**
+
+
 ## Estructura del repositorio
 
 ANONIM_MEDDOCAN/
@@ -158,5 +180,5 @@ El texto completo de la licencia se encuentra en el archivo `LICENSE` incluido e
 
 César Carballo  
 Trabajo Fin de Máster – Inteligencia Artificial  
-(Especificar universidad e institución una vez confirmadas)
+CENTRO EUROPEO DE MÁSTERES Y POSGRADOS
 
