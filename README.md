@@ -34,11 +34,11 @@ ANONIM_MEDDOCAN/
 │   ├── ANONIM_Entrenamiento.ipynb        ← Colab técnico (entrenamiento y evaluación)
 │   └── ANONIM_Clinico.ipynb              ← Colab simple para médicos
 │
-├── data/                                 ← NO INCLUIR datasets reales en el repositorio
+├── data/                                 ← NO SE INCLUYEN datasets reales en el repositorio
 │   └── ejemplos/                         ← Ejemplos sintéticos sin datos personales
 │
 ├── models/
-│   └── .gitignore                        ← Evita subir modelos pesados
+│   └── .gitignore                        ← Evito subir modelos pesados
 │
 └── docs/
     ├── articulo_ANONIM.docx
@@ -49,9 +49,9 @@ ANONIM_MEDDOCAN/
 
 ## Instalación
 
-Clonar el repositorio (insertar la URL del repositorio real una vez creado):
+Clonar el repositorio:
 
-git clone https://github.com/USUARIO/REPOSITORIO_ANONIM
+git clone https://github.com/ccarballo50/REPOSITORIO_ANONIM
 cd ANONIM_MEDDOCAN
 pip install -r requirements.txt
 
