@@ -1,0 +1,77 @@
+{
+  "text_cols": [
+    "HISTORIA_ACTUAL",
+    "HISTORIA_ACTUAL_REINGRESO"
+  ],
+  "structured_types": {
+    "AÑO_INGRESO": "keep",
+    "MES_INGRESO": "keep",
+    "NHC": "nhc",
+    "EPISODIO": "keep",
+    "SEXO": "keep",
+    "EDAD": "keep",
+    "FECHAINI": "date",
+    "HORAINI": "date",
+    "FECHAFIN": "date",
+    "HORAFIN": "date",
+    "ANTIAGREGANTES": "keep",
+    "ANTICOAGULANTES": "keep",
+    "TAC_CRANEAL_PEDIDO": "nhc",
+    "SAN_PLAQUETAS": "keep",
+    "PLA_ACTIVIDAD_PROTROMBINA": "nhc",
+    "PLA_INR": "keep",
+    "PLA_TTPA": "keep",
+    "PLA_CREATININA": "keep",
+    "FILTRADO_GLOMERULAR": "keep",
+    "REINGRESO": "keep",
+    "REINGRESO_FECHAINI": "date",
+    "REINGRESO_HORAINI": "date",
+    "REINGRESO_FECHAFIN": "date",
+    "REINGRESO_HORAFIN": "date",
+    "REINGRESO_SAN_PLAQUETAS": "keep",
+    "REINGRESO_PLA_ACTIVIDAD_PROTROMBINA": "nhc",
+    "REINGRESO_PLA_INR": "keep",
+    "REINGRESO_PLA_TTPA": "keep",
+    "REINGRESO_PLA_CREATININA": "keep",
+    "REINGRESO_FILTRADO_GLOMERULAR": "keep",
+    "REINGRESO_TAC_CRANEAL_PEDIDO": "nhc",
+    "AÑO": "keep",
+    "GRUPO_EDAD": "keep",
+    "TAC_PEDIDO": "nhc",
+    "TRATAMIENTO": "keep",
+    "TTO_ANTITROMBOTICO": "keep",
+    "REINGRESO_SINO": "keep"
+  },
+  "ner_labels": [
+    "PER",
+    "ORG",
+    "LOC",
+    "GPE",
+    "NORP",
+    "FAC",
+    "MISC"
+  ],
+  "regex": {
+    "dni": "\\b\\d{8}[A-HJ-NP-TV-Z]\\b",
+    "nie": "\\b[XYZ]\\d{7}[A-HJ-NP-TV-Z]\\b",
+    "phone": "\\b(?:\\+34[\\s\\-]?)?(?:\\d[\\s\\-]?){9}\\b",
+    "email": "\\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}\\b",
+    "date": "\\b\\d{1,2}[/-]\\d{1,2}[/-]\\d{2,4}\\b|\\b\\d{1,2}\\s+(?:ene|feb|mar|abr|may|jun|jul|ago|sep|oct|nov|dic)\\.?\\s+\\d{2,4}\\b",
+    "nhc": ""
+  },
+  "gazetteer_size": 0,
+  "masking": {
+    "strategy": "tag",
+    "tag_map": {
+      "PER": "[NOMBRE]",
+      "ORG": "[ORG]",
+      "LOC": "[LOC]",
+      "GPE": "[LOC]",
+      "NORP": "[COLECTIVO]",
+      "FAC": "[INSTALACION]",
+      "MISC": "[X]"
+    }
+  },
+  "secondary_ner_loaded": true,
+  "drug_lexicon_size": 10
+}

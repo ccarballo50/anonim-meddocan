@@ -1,0 +1,47 @@
+version: 1
+model_path: models/ner_meddocan/model-best
+text_cols:
+- texto
+structured_cols:
+- column: doc_id
+  kind: '4567890'
+- column: NOMBRE_SUJETO_ASISTENCIA
+  kind: Rivera Bueno
+- column: ID_SUJETO_ASISTENCIA
+  kind: '368503'
+- column: NUMERO_TELEFONO
+  kind: '686851982'
+- column: CORREO_ELECTRONICO
+  kind: javiertorresgomez@yahoo.es
+- column: FECHAS
+  kind: 03/03/1946
+- column: HOSPITAL
+  kind: Hospital Universitario de Getafe
+- column: CALLE
+  kind: c/ del Abedul 5-7, 2º dcha
+- column: TERRITORIO
+  kind: Madrid
+- column: PAIS
+  kind: España
+masking:
+  strategy: tag
+  tag_map:
+    NOMBRE_SUJETO_ASISTENCIA: '[NOMBRE]'
+    ID_SUJETO_ASISTENCIA: '[ID]'
+    NUMERO_TELEFONO: '[TEL]'
+    CORREO_ELECTRONICO: '[EMAIL]'
+    FECHAS: '[FECHA]'
+    HOSPITAL: '[HOSPITAL]'
+    CALLE: '[CALLE]'
+    TERRITORIO: '[TERRITORIO]'
+    PAIS: '[PAIS]'
+regex:
+  dni: \b\d{8}[A-HJ-NP-TV-Z]\b
+  nie: \b[XYZ]\d{7}[A-HJ-NP-TV-Z]\b
+  phone: \b(?:\+34\s?)?(?:\d\s?){9}\b
+  email: \b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b
+  date: \b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b|\b\d{1,2}\s+(?:ene|feb|mar|abr|may|jun|jul|ago|sep|oct|nov|dic)\.?\s+\d{2,4}\b
+  nhc: ''
+audit:
+  keep_input_columns: true
+  add_counts_per_row: true

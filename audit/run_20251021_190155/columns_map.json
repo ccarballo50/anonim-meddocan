@@ -1,0 +1,156 @@
+{
+  "text_cols": [
+    "HISTORIA_ACTUAL",
+    "HISTORIA_ACTUAL_REINGRESO"
+  ],
+  "structured_cols": [
+    {
+      "column": "AÑO_INGRESO",
+      "kind": "num"
+    },
+    {
+      "column": "MES_INGRESO",
+      "kind": "num"
+    },
+    {
+      "column": "NHC",
+      "kind": "pii"
+    },
+    {
+      "column": "EPISODIO",
+      "kind": "pii"
+    },
+    {
+      "column": "SEXO",
+      "kind": "cat"
+    },
+    {
+      "column": "EDAD",
+      "kind": "cat"
+    },
+    {
+      "column": "FECHAINI",
+      "kind": "num"
+    },
+    {
+      "column": "HORAINI",
+      "kind": "pii"
+    },
+    {
+      "column": "FECHAFIN",
+      "kind": "num"
+    },
+    {
+      "column": "HORAFIN",
+      "kind": "num"
+    },
+    {
+      "column": "ANTIAGREGANTES",
+      "kind": "cat"
+    },
+    {
+      "column": "ANTICOAGULANTES",
+      "kind": "cat"
+    },
+    {
+      "column": "TAC_CRANEAL_PEDIDO",
+      "kind": "cat"
+    },
+    {
+      "column": "SAN_PLAQUETAS",
+      "kind": "cat"
+    },
+    {
+      "column": "PLA_ACTIVIDAD_PROTROMBINA",
+      "kind": "cat"
+    },
+    {
+      "column": "PLA_INR",
+      "kind": "cat"
+    },
+    {
+      "column": "PLA_TTPA",
+      "kind": "cat"
+    },
+    {
+      "column": "PLA_CREATININA",
+      "kind": "cat"
+    },
+    {
+      "column": "FILTRADO_GLOMERULAR",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_FECHAINI",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_HORAINI",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_FECHAFIN",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_HORAFIN",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_SAN_PLAQUETAS",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_PLA_ACTIVIDAD_PROTROMBINA",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_PLA_INR",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_PLA_TTPA",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_PLA_CREATININA",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_FILTRADO_GLOMERULAR",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_TAC_CRANEAL_PEDIDO",
+      "kind": "cat"
+    },
+    {
+      "column": "AÑO",
+      "kind": "cat"
+    },
+    {
+      "column": "GRUPO_EDAD",
+      "kind": "cat"
+    },
+    {
+      "column": "TAC_PEDIDO",
+      "kind": "cat"
+    },
+    {
+      "column": "TRATAMIENTO",
+      "kind": "cat"
+    },
+    {
+      "column": "TTO_ANTITROMBOTICO",
+      "kind": "cat"
+    },
+    {
+      "column": "REINGRESO_SINO",
+      "kind": "cat"
+    }
+  ]
+}

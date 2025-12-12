@@ -1,0 +1,140 @@
+{
+  "token_acc": 1.0,
+  "token_p": 1.0,
+  "token_r": 1.0,
+  "token_f": 1.0,
+  "sents_p": null,
+  "sents_r": null,
+  "sents_f": null,
+  "tag_acc": null,
+  "pos_acc": null,
+  "morph_acc": null,
+  "morph_micro_p": null,
+  "morph_micro_r": null,
+  "morph_micro_f": null,
+  "morph_per_feat": null,
+  "dep_uas": null,
+  "dep_las": null,
+  "dep_las_per_type": null,
+  "ents_p": 0.0,
+  "ents_r": 0.0,
+  "ents_f": 0.0,
+  "ents_per_type": {
+    "NOMBRE_SUJETO_ASISTENCIA": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "ID_SUJETO_ASISTENCIA": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "CALLE": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "TERRITORIO": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "FECHAS": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "PAIS": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "EDAD_SUJETO_ASISTENCIA": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "NOMBRE_PERSONAL_SANITARIO": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "ID_TITULACION_PERSONAL_SANITARIO": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "HOSPITAL": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "CORREO_ELECTRONICO": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "ID_ASEGURAMIENTO": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "SEXO_SUJETO_ASISTENCIA": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "OTROS_SUJETO_ASISTENCIA": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "INSTITUCION": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "NUMERO_TELEFONO": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "FAMILIARES_SUJETO_ASISTENCIA": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "ID_CONTACTO_ASISTENCIAL": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "NUMERO_FAX": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "CENTRO_SALUD": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    },
+    "PROFESION": {
+      "p": 0.0,
+      "r": 0.0,
+      "f": 0.0
+    }
+  },
+  "cats_score": 0.0,
+  "cats_score_desc": "macro F",
+  "cats_micro_p": 0.0,
+  "cats_micro_r": 0.0,
+  "cats_micro_f": 0.0,
+  "cats_macro_p": 0.0,
+  "cats_macro_r": 0.0,
+  "cats_macro_f": 0.0,
+  "cats_macro_auc": 0.0,
+  "cats_f_per_type": {},
+  "cats_auc_per_type": {}
+}

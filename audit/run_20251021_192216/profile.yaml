@@ -1,0 +1,127 @@
+version: 1
+model_path: models/ner_meddocan/model-best
+
+# === Columnas de TEXTO libre (ambos nombres para compatibilidad) ===
+text_columns:
+  - HISTORIA_ACTUAL
+  - HISTORIA_ACTUAL_REINGRESO
+  - DES_DIAG_ALTA
+text_cols:
+  - HISTORIA_ACTUAL
+  - HISTORIA_ACTUAL_REINGRESO
+  - DES_DIAG_ALTA
+
+# === Columnas estructuradas (dos formatos por compatibilidad) ===
+structured_types:
+  AÑO_INGRESO: num
+  MES_INGRESO: num
+  NHC: pii
+  EPISODIO: pii
+  SEXO: cat
+  EDAD: num
+  FECHAINI: date
+  HORAINI: date
+  FECHAFIN: date
+  HORAFIN: date
+  ANTIAGREGANTES: cat
+  ANTICOAGULANTES: cat
+  TAC_CRANEAL_PEDIDO: cat
+  REINGRESO_SINO: cat
+  GRUPO_EDAD: cat
+  TAC_PEDIDO: cat
+  TRATAMIENTO: cat
+  TTO_ANTITROMBOTICO: cat
+  REINGRESO_FECHAINI: date
+  REINGRESO_HORAINI: date
+  REINGRESO_FECHAFIN: date
+  REINGRESO_HORAFIN: date
+  REINGRESO_SAN_PLAQUETAS: num
+  REINGRESO_PLA_ACTIVIDAD_PROTROMBINA: num
+  REINGRESO_PLA_INR: num
+  REINGRESO_PLA_TTPA: num
+  REINGRESO_PLA_CREATININA: num
+  REINGRESO_FILTRADO_GLOMERULAR: num
+  REINGRESO_TAC_CRANEAL_PEDIDO: cat
+
+structured_cols:
+  - column: AÑO_INGRESO
+    kind: num
+  - column: MES_INGRESO
+    kind: num
+  - column: NHC
+    kind: pii
+  - column: EPISODIO
+    kind: pii
+  - column: SEXO
+    kind: cat
+  - column: EDAD
+    kind: num
+  - column: FECHAINI
+    kind: date
+  - column: HORAINI
+    kind: date
+  - column: FECHAFIN
+    kind: date
+  - column: HORAFIN
+    kind: date
+  - column: ANTIAGREGANTES
+    kind: cat
+  - column: ANTICOAGULANTES
+    kind: cat
+  - column: TAC_CRANEAL_PEDIDO
+    kind: cat
+  - column: REINGRESO_SINO
+    kind: cat
+  - column: GRUPO_EDAD
+    kind: cat
+  - column: TAC_PEDIDO
+    kind: cat
+  - column: TRATAMIENTO
+    kind: cat
+  - column: TTO_ANTITROMBOTICO
+    kind: cat
+  - column: REINGRESO_FECHAINI
+    kind: date
+  - column: REINGRESO_HORAINI
+    kind: date
+  - column: REINGRESO_FECHAFIN
+    kind: date
+  - column: REINGRESO_HORAFIN
+    kind: date
+  - column: REINGRESO_SAN_PLAQUETAS
+    kind: num
+  - column: REINGRESO_PLA_ACTIVIDAD_PROTROMBINA
+    kind: num
+  - column: REINGRESO_PLA_INR
+    kind: num
+  - column: REINGRESO_PLA_TTPA
+    kind: num
+  - column: REINGRESO_PLA_CREATININA
+    kind: num
+  - column: REINGRESO_FILTRADO_GLOMERULAR
+    kind: num
+  - column: REINGRESO_TAC_CRANEAL_PEDIDO
+    kind: cat
+
+# === Forzar qué entidades del NER se anonimizan ===
+# Incluye personas, organizaciones, lugares/ciudades/países, grupos (NORP), instalaciones (FAC).
+ner_labels:
+  - PER
+  - ORG
+  - LOC
+  - GPE
+  - NORP
+  - FAC
+
+# === Regex complementarios para PII (añadimos GETAFE explícito) ===
+regex:
+  phone: \b(?:\+34\s?)?(?:\d\s?){9}\b
+  email: \b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b
+  date: \b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b|\b\d{1,2}\s+(?:ene|feb|mar|abr|may|jun|jul|ago|sep|oct|nov|dic)\.?\s+\d{2,4}\b
+  nhc: ''
+  city_getafe: (?i)\bgetafe\b
+
+audit:
+  keep_input_columns: true
+  add_counts_per_row: true
+

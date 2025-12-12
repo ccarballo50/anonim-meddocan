@@ -1,0 +1,143 @@
+{"left": "paciente en tratamiento ", "span": "con", "right": " sintrom 3 mg", "label": "DRUG"}
+{"left": "sintrom ajustado por INR última ", "span": "dosis", "right": " 3 mg", "label": "DRUG"}
+{"left": "", "span": "tto", "right": " con plavix tras stent (marca comercial de clopido", "label": "OTHER"}
+{"left": "dolor torácico en reposo ECG ", "span": "sin", "right": " cambios", "label": "OTHER"}
+{"left": "dolor torácico ", "span": "en", "right": " reposo ECG sin cambios", "label": "OTHER"}
+{"left": "paracetamol 1 ", "span": "g", "right": " si dolor", "label": "OTHER"}
+{"left": "ibuprofeno 400 mg cada ", "span": "8", "right": " horas", "label": "DRUG"}
+{"left": "dolor ", "span": "torácico", "right": " en reposo ECG sin cambios", "label": "OTHER"}
+{"left": "aspirina infantil por las ", "span": "mañanas", "right": "", "label": "OTHER"}
+{"left": "ibuprofeno 400 mg ", "span": "cada", "right": " 8 horas", "label": "DRUG"}
+{"left": "paciente con ", "span": "cefalea", "right": " frontal desde ayer", "label": "OTHER"}
+{"left": "inicia ", "span": "acenocumarol", "right": " tras alta hospitalaria", "label": "DRUG"}
+{"left": "paciente en tratamiento con ", "span": "sintrom", "right": " 3 mg", "label": "DRUG"}
+{"left": "", "span": "ibuprofeno", "right": " 400 mg cada 8 horas", "label": "DRUG"}
+{"left": "adiro no ", "span": "disponible", "right": " en farmacia (ruido inventado)", "label": "OTHER"}
+{"left": "sustituido ", "span": "sintrom", "right": " por acenocumarol", "label": "DRUG"}
+{"left": "aporta informe: alergia a penicilina (no está ", "span": "en", "right": " lexicón pero es fármaco)", "label": "OTHER"}
+{"left": "antiagregación ", "span": "suspendida", "right": " temporalmente", "label": "OTHER"}
+{"left": "aporta informe: alergia ", "span": "a", "right": " penicilina (no está en lexicón pero es fármaco)", "label": "OTHER"}
+{"left": "", "span": "dolor", "right": " torácico en reposo ECG sin cambios", "label": "OTHER"}
+{"left": "omeprazol cuando ", "span": "precisa", "right": "", "label": "OTHER"}
+{"left": "paracetamol 1 g ", "span": "si", "right": " dolor", "label": "DRUG"}
+{"left": "", "span": "omeprazol", "right": " cuando precisa", "label": "DRUG"}
+{"left": "vive en getafe con su familia (sin ", "span": "fármaco", "right": ")", "label": "OTHER"}
+{"left": "", "span": "sintrom", "right": " ajustado por INR última dosis 3 mg", "label": "DRUG"}
+{"left": "paciente con cefalea frontal ", "span": "desde", "right": " ayer", "label": "OTHER"}
+{"left": "", "span": "ibuprofeno", "right": " 400 mg cada 8 horas", "label": "DRUG"}
+{"left": "sintrom ajustado por INR ", "span": "última", "right": " dosis 3 mg", "label": "DRUG"}
+{"left": "antiagregado con adiro 100 mg cada ", "span": "24", "right": " h", "label": "DRUG"}
+{"left": "diuresis conservada creatinina ", "span": "basal", "right": " 0.9", "label": "OTHER"}
+{"left": "", "span": "aspirina", "right": " infantil por las mañanas", "label": "DRUG"}
+{"left": "en tratamiento con clopidogrel 75 ", "span": "mg", "right": "", "label": "OTHER"}
+{"left": "aporta informe: alergia a penicilina (no ", "span": "está", "right": " en lexicón pero es fármaco)", "label": "OTHER"}
+{"left": "aporta informe: alergia a penicilina (", "span": "no", "right": " está en lexicón pero es fármaco)", "label": "OTHER"}
+{"left": "paracetamol 1 g si ", "span": "dolor", "right": "", "label": "DRUG"}
+{"left": "sintrom ajustado ", "span": "por", "right": " INR última dosis 3 mg", "label": "OTHER"}
+{"left": "aspirina infantil ", "span": "en", "right": " la mañana (sin mg)", "label": "OTHER"}
+{"left": "atorvastatina ", "span": "por", "right": " la noche", "label": "OTHER"}
+{"left": "", "span": "aspirina", "right": " infantil en la mañana (sin mg)", "label": "DRUG"}
+{"left": "vive en getafe con su familia (", "span": "sin", "right": " fármaco)", "label": "OTHER"}
+{"left": "vive en getafe ", "span": "con", "right": " su familia (sin fármaco)", "label": "OTHER"}
+{"left": "", "span": "paracetamol", "right": " 1 g si dolor", "label": "DRUG"}
+{"left": "", "span": "paciente", "right": " en tratamiento con sintrom 3 mg", "label": "OTHER"}
+{"left": "atorvastatina por la ", "span": "noche", "right": "", "label": "OTHER"}
+{"left": "plavix tras stent control ", "span": "en", "right": " cardiología", "label": "OTHER"}
+{"left": "", "span": "toma", "right": " omeprazol por la mañana", "label": "OTHER"}
+{"left": "", "span": "adiro", "right": " no disponible en farmacia (ruido inventado)", "label": "DRUG"}
+{"left": "aporta ", "span": "informe", "right": ": alergia a penicilina (no está en lexicón pero es", "label": "OTHER"}
+{"left": "no ", "span": "refiere", "right": " medicación habitual", "label": "OTHER"}
+{"left": "control de INR en 48 ", "span": "h", "right": "", "label": "OTHER"}
+{"left": "inicia acenocumarol tras alta ", "span": "hospitalaria", "right": "", "label": "OTHER"}
+{"left": "", "span": "omeprazol", "right": " antes del desayuno", "label": "DRUG"}
+{"left": "aspirina infantil en ", "span": "la", "right": " mañana (sin mg)", "label": "OTHER"}
+{"left": "adiro ", "span": "no", "right": " disponible en farmacia (ruido inventado)", "label": "OTHER"}
+{"left": "", "span": "antiagregado", "right": " con adiro 100 mg cada 24 h", "label": "DRUG"}
+{"left": "", "span": "se", "right": " pauta estatina nocturna", "label": "OTHER"}
+{"left": "", "span": "atorvastatina", "right": " por la noche", "label": "DRUG"}
+{"left": "omeprazol ", "span": "antes", "right": " del desayuno", "label": "OTHER"}
+{"left": "ibuprofeno 400 mg cada ", "span": "8", "right": " horas", "label": "DRUG"}
+{"left": "control de ", "span": "INR", "right": " en 48 h", "label": "OTHER"}
+{"left": "antiagregado con adiro 100 mg cada 24 ", "span": "h", "right": "", "label": "DRUG"}
+{"left": "", "span": "no", "right": " refiere medicación habitual", "label": "OTHER"}
+{"left": "paciente con cefalea frontal desde ", "span": "ayer", "right": "", "label": "OTHER"}
+{"left": "enoxaparina profilaxis ", "span": "postquirúrgica", "right": "", "label": "OTHER"}
+{"left": "ibuprofeno 400 ", "span": "mg", "right": " cada 8 horas", "label": "OTHER"}
+{"left": "sintrom ajustado por ", "span": "INR", "right": " última dosis 3 mg", "label": "DRUG"}
+{"left": "dolor torácico en reposo ECG sin ", "span": "cambios", "right": "", "label": "OTHER"}
+{"left": "antiagregado con ", "span": "adiro", "right": " 100 mg", "label": "DRUG"}
+{"left": "toma adiro por ", "span": "fibrilación", "right": " auricular", "label": "OTHER"}
+{"left": "aspirina infantil en la mañana (sin ", "span": "mg", "right": ")", "label": "OTHER"}
+{"left": "control ", "span": "de", "right": " INR en 48 h", "label": "OTHER"}
+{"left": "", "span": "enoxaparina", "right": " profilaxis postquirúrgica", "label": "DRUG"}
+{"left": "vive ", "span": "en", "right": " getafe con su familia (sin fármaco)", "label": "OTHER"}
+{"left": "paciente con cefalea ", "span": "frontal", "right": " desde ayer", "label": "OTHER"}
+{"left": "enoxaparina ", "span": "profilaxis", "right": " postquirúrgica", "label": "OTHER"}
+{"left": "antiagregación suspendida ", "span": "temporalmente", "right": "", "label": "OTHER"}
+{"left": "toma omeprazol por ", "span": "la", "right": " mañana", "label": "OTHER"}
+{"left": "", "span": "plavix", "right": " tras stent control en cardiología", "label": "DRUG"}
+{"left": "aporta informe: alergia a penicilina (no está en ", "span": "lexicón", "right": " pero es fármaco)", "label": "OTHER"}
+{"left": "", "span": "paciente", "right": " con cefalea frontal desde ayer", "label": "OTHER"}
+{"left": "en tratamiento ", "span": "con", "right": " clopidogrel 75 mg", "label": "DRUG"}
+{"left": "diuresis conservada ", "span": "creatinina", "right": " basal 0.9", "label": "OTHER"}
+{"left": "", "span": "paracetamol", "right": " 1 g si dolor", "label": "DRUG"}
+{"left": "ibuprofeno 400 mg cada 8 ", "span": "horas", "right": "", "label": "DRUG"}
+{"left": "paciente en ", "span": "tratamiento", "right": " con sintrom 3 mg", "label": "DRUG"}
+{"left": "antiagregado con adiro 100 ", "span": "mg", "right": " cada 24 h", "label": "OTHER"}
+{"left": "antiagregado ", "span": "con", "right": " adiro 100 mg", "label": "DRUG"}
+{"left": "", "span": "control", "right": " de INR en 48 h", "label": "OTHER"}
+{"left": "toma adiro ", "span": "por", "right": " fibrilación auricular", "label": "OTHER"}
+{"left": "paciente en tratamiento con sintrom ", "span": "3", "right": " mg", "label": "OTHER"}
+{"left": "plavix tras ", "span": "stent", "right": " control en cardiología", "label": "OTHER"}
+{"left": "", "span": "sustituido", "right": " sintrom por acenocumarol", "label": "OTHER"}
+{"left": "ibuprofeno 400 mg cada 8 ", "span": "horas", "right": "", "label": "DRUG"}
+{"left": "", "span": "inicia", "right": " acenocumarol tras alta hospitalaria", "label": "OTHER"}
+{"left": "se pauta ", "span": "estatina", "right": " nocturna", "label": "OTHER"}
+{"left": "dolor torácico en reposo ", "span": "ECG", "right": " sin cambios", "label": "OTHER"}
+{"left": "sustituido sintrom por ", "span": "acenocumarol", "right": "", "label": "DRUG"}
+{"left": "adiro no disponible en farmacia (", "span": "ruido", "right": " inventado)", "label": "OTHER"}
+{"left": "paracetamol ", "span": "1", "right": " g si dolor", "label": "OTHER"}
+{"left": "ibuprofeno 400 ", "span": "mg", "right": " cada 8 horas", "label": "OTHER"}
+{"left": "toma ", "span": "omeprazol", "right": " por la mañana", "label": "DRUG"}
+{"left": "", "span": "antiagregado", "right": " con adiro 100 mg", "label": "DRUG"}
+{"left": "paracetamol 1 g si ", "span": "dolor", "right": "", "label": "DRUG"}
+{"left": "antiagregado con adiro 100 mg ", "span": "cada", "right": " 24 h", "label": "DRUG"}
+{"left": "inicia acenocumarol ", "span": "tras", "right": " alta hospitalaria", "label": "OTHER"}
+{"left": "vive en getafe con ", "span": "su", "right": " familia (sin fármaco)", "label": "OTHER"}
+{"left": "paciente ", "span": "con", "right": " cefalea frontal desde ayer", "label": "OTHER"}
+{"left": "se pauta estatina ", "span": "nocturna", "right": "", "label": "OTHER"}
+{"left": "dolor torácico en ", "span": "reposo", "right": " ECG sin cambios", "label": "OTHER"}
+{"left": "dabigatran dosis ", "span": "habitual", "right": "", "label": "OTHER"}
+{"left": "tto con plavix tras stent (marca comercial de ", "span": "clopidogrel", "right": ")", "label": "DRUG"}
+{"left": "", "span": "dabigatran", "right": " dosis habitual", "label": "DRUG"}
+{"left": "aspirina infantil en la ", "span": "mañana", "right": " (sin mg)", "label": "OTHER"}
+{"left": "plavix tras stent ", "span": "control", "right": " en cardiología", "label": "OTHER"}
+{"left": "en tratamiento con clopidogrel ", "span": "75", "right": " mg", "label": "OTHER"}
+{"left": "aspirina infantil ", "span": "por", "right": " las mañanas", "label": "OTHER"}
+{"left": "tto con plavix tras stent (marca ", "span": "comercial", "right": " de clopidogrel)", "label": "OTHER"}
+{"left": "ibuprofeno 400 mg ", "span": "cada", "right": " 8 horas", "label": "DRUG"}
+{"left": "en tratamiento con ", "span": "clopidogrel", "right": " 75 mg", "label": "DRUG"}
+{"left": "en tratamiento con ", "span": "clopidogrel", "right": " 75 mg", "label": "DRUG"}
+{"left": "toma omeprazol por la ", "span": "mañana", "right": "", "label": "OTHER"}
+{"left": "antiagregado con adiro 100 ", "span": "mg", "right": "", "label": "OTHER"}
+{"left": "toma ", "span": "adiro", "right": " por fibrilación auricular", "label": "DRUG"}
+{"left": "sintrom ajustado por INR última dosis 3 ", "span": "mg", "right": "", "label": "OTHER"}
+{"left": "paracetamol 1 ", "span": "g", "right": " si dolor", "label": "OTHER"}
+{"left": " alergia a penicilina (no está en lexicón pero es ", "span": "fármaco", "right": ")", "label": "OTHER"}
+{"left": "ibuprofeno ", "span": "400", "right": " mg cada 8 horas", "label": "OTHER"}
+{"left": "aporta informe: alergia a ", "span": "penicilina", "right": " (no está en lexicón pero es fármaco)", "label": "OTHER"}
+{"left": "aporta informe: ", "span": "alergia", "right": " a penicilina (no está en lexicón pero es fármaco)", "label": "OTHER"}
+{"left": "antiagregado con ", "span": "adiro", "right": " 100 mg cada 24 h", "label": "DRUG"}
+{"left": "me: alergia a penicilina (no está en lexicón pero ", "span": "es", "right": " fármaco)", "label": "OTHER"}
+{"left": "inicia acenocumarol tras ", "span": "alta", "right": " hospitalaria", "label": "OTHER"}
+{"left": "paracetamol ", "span": "1", "right": " g si dolor", "label": "OTHER"}
+{"left": "antiagregado ", "span": "con", "right": " adiro 100 mg cada 24 h", "label": "DRUG"}
+{"left": "", "span": "antiagregación", "right": " suspendida temporalmente", "label": "OTHER"}
+{"left": "paracetamol 1 g ", "span": "si", "right": " dolor", "label": "DRUG"}
+{"left": "tto con ", "span": "plavix", "right": " tras stent (marca comercial de clopidogrel)", "label": "DRUG"}
+{"left": "vive en getafe con su ", "span": "familia", "right": " (sin fármaco)", "label": "OTHER"}
+{"left": "", "span": "en", "right": " tratamiento con clopidogrel 75 mg", "label": "OTHER"}
+{"left": "aspirina ", "span": "infantil", "right": " en la mañana (sin mg)", "label": "OTHER"}
+{"left": "en tratamiento ", "span": "con", "right": " clopidogrel 75 mg", "label": "DRUG"}
+{"left": "tto con plavix ", "span": "tras", "right": " stent (marca comercial de clopidogrel)", "label": "OTHER"}
+{"left": "sustituido sintrom ", "span": "por", "right": " acenocumarol", "label": "OTHER"}

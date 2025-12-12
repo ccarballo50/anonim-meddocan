@@ -1,0 +1,2 @@
+split	file	label	start	end	reason	first	last	frag	context
+train	C:\Users\lupem\ANONIM_MEDDOCAN\meddocan\meddocan\train\brat\S0004-06142007000900012-1.txt	EDAD_SUJETO_ASISTENCIA	224	229	docbin-space-edge	' ' U+0020 SPACE	's' U+0073 LATIN SMALL LETTER S	 años	5/1946. País: España. Edad:67  años Sexo: M. Fecha de Ingreso: 04

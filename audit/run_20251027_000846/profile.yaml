@@ -1,0 +1,150 @@
+version: 1
+model_path: models/ner_meddocan/model-best
+text_cols:
+- HISTORIA_ACTUAL
+- HISTORIA_ACTUAL_REINGRESO
+structured_cols:
+- column: AÑO_INGRESO
+  kind: keep
+- column: MES_INGRESO
+  kind: keep
+- column: NHC
+  kind: nhc
+- column: EPISODIO
+  kind: keep
+- column: SEXO
+  kind: keep
+- column: EDAD
+  kind: keep
+- column: FECHAINI
+  kind: date
+- column: HORAINI
+  kind: date
+- column: FECHAFIN
+  kind: date
+- column: HORAFIN
+  kind: date
+- column: ANTIAGREGANTES
+  kind: keep
+- column: ANTICOAGULANTES
+  kind: keep
+- column: TAC_CRANEAL_PEDIDO
+  kind: nhc
+- column: SAN_PLAQUETAS
+  kind: keep
+- column: PLA_ACTIVIDAD_PROTROMBINA
+  kind: nhc
+- column: PLA_INR
+  kind: keep
+- column: PLA_TTPA
+  kind: keep
+- column: PLA_CREATININA
+  kind: keep
+- column: FILTRADO_GLOMERULAR
+  kind: keep
+- column: REINGRESO
+  kind: keep
+- column: REINGRESO_FECHAINI
+  kind: date
+- column: REINGRESO_HORAINI
+  kind: date
+- column: REINGRESO_FECHAFIN
+  kind: date
+- column: REINGRESO_HORAFIN
+  kind: date
+- column: REINGRESO_SAN_PLAQUETAS
+  kind: keep
+- column: REINGRESO_PLA_ACTIVIDAD_PROTROMBINA
+  kind: nhc
+- column: REINGRESO_PLA_INR
+  kind: keep
+- column: REINGRESO_PLA_TTPA
+  kind: keep
+- column: REINGRESO_PLA_CREATININA
+  kind: keep
+- column: REINGRESO_FILTRADO_GLOMERULAR
+  kind: keep
+- column: REINGRESO_TAC_CRANEAL_PEDIDO
+  kind: nhc
+- column: AÑO
+  kind: keep
+- column: GRUPO_EDAD
+  kind: keep
+- column: TAC_PEDIDO
+  kind: nhc
+- column: TRATAMIENTO
+  kind: keep
+- column: TTO_ANTITROMBOTICO
+  kind: keep
+- column: REINGRESO_SINO
+  kind: keep
+structured_types:
+  AÑO_INGRESO: keep
+  MES_INGRESO: keep
+  NHC: nhc
+  EPISODIO: keep
+  SEXO: keep
+  EDAD: keep
+  FECHAINI: date
+  HORAINI: date
+  FECHAFIN: date
+  HORAFIN: date
+  ANTIAGREGANTES: keep
+  ANTICOAGULANTES: keep
+  TAC_CRANEAL_PEDIDO: nhc
+  SAN_PLAQUETAS: keep
+  PLA_ACTIVIDAD_PROTROMBINA: nhc
+  PLA_INR: keep
+  PLA_TTPA: keep
+  PLA_CREATININA: keep
+  FILTRADO_GLOMERULAR: keep
+  REINGRESO: keep
+  REINGRESO_FECHAINI: date
+  REINGRESO_HORAINI: date
+  REINGRESO_FECHAFIN: date
+  REINGRESO_HORAFIN: date
+  REINGRESO_SAN_PLAQUETAS: keep
+  REINGRESO_PLA_ACTIVIDAD_PROTROMBINA: nhc
+  REINGRESO_PLA_INR: keep
+  REINGRESO_PLA_TTPA: keep
+  REINGRESO_PLA_CREATININA: keep
+  REINGRESO_FILTRADO_GLOMERULAR: keep
+  REINGRESO_TAC_CRANEAL_PEDIDO: nhc
+  AÑO: keep
+  GRUPO_EDAD: keep
+  TAC_PEDIDO: nhc
+  TRATAMIENTO: keep
+  TTO_ANTITROMBOTICO: keep
+  REINGRESO_SINO: keep
+masking:
+  strategy: tag
+  tag_map:
+    PER: '[NOMBRE]'
+    ORG: '[ORG]'
+    LOC: '[LOC]'
+    GPE: '[LOC]'
+    NORP: '[COLECTIVO]'
+    FAC: '[INSTALACION]'
+    MISC: '[X]'
+regex:
+  dni: \b\d{8}[A-HJ-NP-TV-Z]\b
+  nie: \b[XYZ]\d{7}[A-HJ-NP-TV-Z]\b
+  phone: \b(?:\+34[\s\-]?)?(?:\d[\s\-]?){9}\b
+  email: \b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b
+  date: \b\d{1,2}[/-]\d{1,2}[/-]\d{2,4}\b|\b\d{1,2}\s+(?:ene|feb|mar|abr|may|jun|jul|ago|sep|oct|nov|dic)\.?\s+\d{2,4}\b
+  nhc: ''
+audit:
+  keep_input_columns: true
+  add_counts_per_row: true
+gazetteer_cities: []
+gazetteer_files: []
+drug_lexicon_file: drug_lexicon.txt
+drug_lexicon_extra: []
+ner_labels:
+- PER
+- ORG
+- LOC
+- GPE
+- NORP
+- FAC
+- MISC

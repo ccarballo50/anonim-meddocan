@@ -1,40 +1,38 @@
-# Entorno y ficheros temporales
+# Ignorar entornos virtuales
 .venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
+env/
 
-# Datos pesados y privados (no subir datasets reales)
+# Ignorar modelos pesados
+models/*
+
+# Pero mantener el .gitignore dentro
+!models/.gitignore
+
+# Ignorar datos reales
 WEB meddocan/
 meddocan.zip
-data/
-Resultados.xlsx
 
-# Modelos entrenados (pesados)
-modelo_anonim_v2/
-modelo_meddocan_safe/
-modelo_meddocan_safe_farmacos/
-models/
-
-# Builds y distribuciones
-build/
-dist/
+# Ignorar outputs pesados
 out/
-out_*/
 outputs_ner/
-
-# Experimentos y perfiles locales
-profiles/
-Pruebas/
-audit/
-
-# Binarios y wheels
-*.whl
-
-# Ficheros de empaquetado
-*.spec
-
-# Otros generados
 out_meddocan_full/
 out_real_model_vbest/
+
+# Ignorar compilados y artefactos
+*.pyc
+__pycache__/
+
+# Ignorar ficheros bat, pruebas, legacy
+*.bat
+Pruebas/
+profiles/
+
+# Ignorar herramientas y experimentos que NO irán al repo
+anonim_meddocan_real_*/
+anonim_meddocan_pipeline.py
+anonim_gui_launcher.py
+config.old.cfg
+configs/
+debug_* 
+testarmodelo.bat
+
