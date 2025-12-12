@@ -178,7 +178,7 @@ El texto completo de la licencia se encuentra en el archivo `LICENSE` incluido e
 
 ## Autor
 
-César Carballo  
-Trabajo Fin de Máster – Inteligencia Artificial  
+César Carballo Cardona
+Trabajo Fin de Máster – Máster en aplicaciones de la Inteligencia Artifial en la sanidad.
 CENTRO EUROPEO DE MÁSTERES Y POSGRADOS
 
