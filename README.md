@@ -51,7 +51,7 @@ ANONIM_MEDDOCAN/
 
 Clonar el repositorio:
 
-git clone https://github.com/ccarballo50/REPOSITORIO_ANONIM
+git clone https://github.com/ccarballo50/anonim-meddocan.git
 cd ANONIM_MEDDOCAN
 pip install -r requirements.txt
 
