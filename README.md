@@ -141,12 +141,24 @@ Paciente [NOMBRE_SUJETO_ASISTENCIA] vive en [CALLE], [TERRITORIO]. Se pauta [FAR
 
 ---
 
-## Uso clínico: anonimización de un Excel en Google Colab
+## Uso clínico y demostración (Google Colab)
 
-Este repositorio incluye dos cuadernos Colab:
+Este repositorio incluye un cuaderno de Google Colab desarrollado como parte del Trabajo Fin de Máster (TFM), cuyo objetivo es demostrar de forma reproducible el funcionamiento de ANONIM v2 sobre datos sintéticos.
 
-- notebooks/ANONIM_Entrenamiento.ipynb (uso técnico)
-- notebooks/ANONIM_Clinico.ipynb (uso clínico)
+El cuaderno implementa un flujo completo de:
+
+- Descarga y carga del modelo ANONIM v2.
+- Recolección y preparación de datos clínicos en formato Excel.
+- Limpieza y estructuración del texto clínico.
+- Anonimización automática mediante reconocimiento de entidades nombradas (NER).
+- Exportación del dataset anonimizado.
+
+⚠️ **Aviso importante:**  
+
+Este cuaderno se proporciona exclusivamente con fines académicos y demostrativos.  
+No debe utilizarse con datos clínicos reales, ya que Google Colab procesa la información en entornos externos y no cumple los requisitos de la LOPD/RGPD para datos sanitarios.
+
+El uso clínico real de ANONIM está diseñado para realizarse en entornos locales seguros, ejecutando el modelo directamente desde este repositorio.
 
 El cuaderno clínico permite:
 
@@ -155,17 +167,8 @@ El cuaderno clínico permite:
 3. Aplicar ANONIM sobre cada fila
 4. Descargar un Excel con la columna anonimizada
 
-Enlace al Colab (añadir una vez disponible):
-
-PEGAR_AQUI_ENLACE_COLAB_ANONIM_CLINICO
-
----
-
-## Enlace al TFM
-
-Añadir aquí el enlace al PDF final del Trabajo de Fin de Máster:
-
-PEGAR_AQUI_ENLACE_PDF_TFM
+Enlace al Colab:
+https://colab.research.google.com/drive/1RLlUBuLDNCC3J5sslut8Jt-reckdXmPl?usp=sharing
 
 ---
 
