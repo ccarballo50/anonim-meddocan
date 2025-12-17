@@ -1,181 +1,150 @@
-# ANONIM v2.0 – Herramienta de Inteligencia Artificial para Anonimización Automática de Texto Clínico en Español
+# ANONIM v2.0  
+## Anonimización automática de texto clínico en español mediante PLN (spaCy + NER)
 
-ANONIM v2.0 es una herramienta de anonimización automática de texto clínico en español, diseñada para investigación biomédica y especialmente para servicios de urgencias. El sistema utiliza un modelo spaCy 3.8 de NER (Reconocimiento de Entidades) entrenado sobre:
-
-- El corpus oficial MEDDOCAN (train/dev/test)
-- Un subcorpus de fármacos anotado en BRAT
-- Un pipeline robusto y reproducible: tok2vec + ner
-
-El proyecto permite:
-- Entrenar ANONIM desde cero con spaCy
-- Evaluar el rendimiento sobre MEDDOCAN y el subcorpus FARMACO
-- Anonimizar texto clínico de manera automática
-- Permitir que médicos no entrenados suban un Excel a un Google Colab y descarguen un Excel anonimizado
+### Trabajo Fin de Máster
 
 ---
 
-## 🧪 Notebook de demostración (Google Colab)
+## 1. Descripción general
 
-Este proyecto incluye un notebook de demostración utilizado exclusivamente para el **Trabajo Fin de Máster**.  
-Permite ejecutar ANONIM v2 con **datos sintéticos** para mostrar el flujo completo de anonimización.
+**ANONIM v2.0** es una herramienta de anonimización automática de texto clínico en español basada en técnicas de *Procesamiento del Lenguaje Natural (PLN)*, desarrollada como **Trabajo Fin de Máster**.  
 
-🔗 **Abrir Notebook en Google Colab:**  
-https://colab.research.google.com/drive/1RLlUBuLDNCC3J5sslut8Jt-reckdXmPl?usp=sharing
+El sistema permite detectar y anonimizar entidades sensibles presentes en textos clínicos no estructurados (historias clínicas, evolutivos, informes médicos), cumpliendo con los principios de minimización y protección de datos establecidos por el RGPD y la legislación española vigente.
+
+El núcleo del proyecto se apoya en:
+- Modelos **NER (Named Entity Recognition)** entrenados con **spaCy**
+- El corpus **MEDDOCAN** como base de entrenamiento
+- Extensiones específicas para el contexto clínico español (p. ej. fármacos)
 
 ---
 
-### ⚠️ Aviso legal importante (LOPD/RGPD)
+## 2. Objetivo del proyecto
 
-Este notebook de Google Colab **NO DEBE UTILIZARSE CON DATOS CLÍNICOS REALES**.  
-Google Colab procesa la información en servidores externos y, por tanto, **no cumple los requisitos de protección de datos sanitarios**.
+El objetivo principal del TFM es:
 
-El notebook se ofrece exclusivamente como **demostración técnica para el TFM** utilizando datos sintéticos.
+> Diseñar, entrenar y validar un sistema reproducible de anonimización automática de texto clínico en español, capaz de sustituir o complementar los procesos manuales tradicionales, reduciendo tiempo, errores humanos y riesgo de exposición de datos sensibles.
 
-Para uso clínico real, consulte la sección:
+Objetivos secundarios:
+- Analizar el rendimiento de modelos NER aplicados a texto clínico real
+- Proponer una arquitectura reutilizable en otros proyectos de investigación
+- Garantizar la reproducibilidad técnica y ética del sistema
 
-➡️ **“ANONIM Local – Ejecución 100% LOPD segura en entorno hospitalario”**
+---
 
+## 3. Arquitectura del sistema
 
-## Estructura del repositorio
+El sistema se estructura en tres capas claramente diferenciadas:
 
-ANONIM_MEDDOCAN/
+1. **Capa de inferencia (core del TFM)**  
+   - Carga del modelo entrenado  
+   - Procesamiento de texto libre  
+   - Sustitución controlada de entidades sensibles  
+
+2. **Capa de entrenamiento (metodológica)**  
+   - Conversión de datos anotados (BRAT → spaCy)
+   - Entrenamiento supervisado del modelo NER
+   - Evaluación del rendimiento (precisión, recall, F1)
+
+3. **Capa de demostración y reproducibilidad**  
+   - Notebook en Google Colab
+   - Ejemplos sintéticos sin datos reales
+   - Ejecución completa en entorno aislado
+
+---
+
+## 4. Estructura del repositorio:
+
+anonim-meddocan/
 │
-├── README.md                     ← Documento principal del proyecto
-├── LICENSE                       ← Licencia MIT del proyecto
-├── requirements.txt              ← Dependencias necesarias
-├── config.cfg                    ← Configuración del modelo spaCy
+├── README.md ← Documento principal (este archivo)
+├── requirements.txt ← Dependencias del proyecto
+├── config.cfg ← Configuración del pipeline spaCy
 │
-├── src/
-│   ├── convertir_brat_a_spacy.py
-│   ├── convertir_brat_farmacos_solo.py
-│   ├── train_meddocan_ner.py
-│   ├── evaluar_meddocan_ner.py
-│   ├── anonymize_inference.py
-│
-├── notebooks/
-│   ├── ANONIM_Entrenamiento.ipynb        ← Colab técnico (entrenamiento y evaluación)
-│   └── ANONIM_Clinico.ipynb              ← Colab simple para médicos
-│
-├── data/                                 ← NO SE INCLUYEN datasets reales en el repositorio
-│   └── ejemplos/                         ← Ejemplos sintéticos sin datos personales
+├── src/ ← Núcleo funcional del sistema
+│ ├── anonymize_inference.py ← Script principal de anonimización
+│ └── utils.py ← Funciones auxiliares
 │
 ├── models/
-│   └── .gitignore                        ← Evito subir modelos pesados
+│ └── model-best/ ← Modelo final entrenado (spaCy)
+│
+├── notebooks/
+│ └── ANONIM_TFM_Demo.ipynb ← Notebook demostrativo reproducible
+│
+├── training/ ← Metodología de entrenamiento
+│ ├── train_meddocan_safe.py
+│ ├── convert_brat_to_spacy.py
+│ ├── evaluate_ner.py
+│ └── README_TRAINING.md
+│
+├── data/
+│ ├── sample/ ← Textos de ejemplo (sintéticos)
+│ └── README_DATASETS.md
 │
 └── docs/
-    ├── articulo_ANONIM.docx
-    ├── tabla_1_ANONIM.docx
-    └── arquitectura_ANONIM.md
+└── figuras y esquemas del sistema
 
 ---
 
-## Instalación
-
-Clonar el repositorio:
-
-git clone https://github.com/ccarballo50/anonim-meddocan.git
-cd ANONIM_MEDDOCAN
-pip install -r requirements.txt
-
-El proyecto requiere Python 3.10+ para compatibilidad con spaCy 3.8.
 
 ---
 
-## Entrenamiento del modelo ANONIM v2.0
+## 5. Dataset y consideraciones éticas
 
-1) Convertir anotaciones BRAT a spaCy:
+- El modelo ha sido entrenado utilizando el dataset MEDDOCAN, un corpus público y anonimizado.
+- No se incluyen datos clínicos reales en este repositorio.
+- Los ejemplos disponibles son sintéticos o simulados.
+- El desarrollo y uso del sistema se enmarca en un proyecto aprobado por un Comité de Ética en Investigación con Medicamentos (CEIm).
 
-python src/convertir_brat_a_spacy.py --data-root "data/meddocan"
-
-2) Entrenar el modelo:
-
-python -m spacy train config.cfg \
-  --output models/modelo_anonim_v2 \
-  --paths.train "data/meddocan/train.spacy" \
-  --paths.dev   "data/meddocan/dev.spacy"
-
-El entrenamiento generará:
-
-models/modelo_anonim_v2/model-best/
-models/modelo_anonim_v2/model-last/
+En ningún momento se han subido datos clínicos reales a plataformas externas ni a servicios de terceros.
 
 ---
 
-## Evaluación del modelo
+## 6. Reproducibilidad
 
-### Evaluación sobre MEDDOCAN
+El proyecto es totalmente reproducible mediante:
 
-python -m spacy evaluate \
-  models/modelo_anonim_v2/model-best \
-  data/meddocan/test.spacy \
-  --output models/modelo_anonim_v2/results_test.json
+- Clonado del repositorio
+- Instalación de dependencias (`requirements.txt`)
+- Ejecución del notebook `ANONIM_TFM_Demo.ipynb` en Google Colab
 
-### Evaluación del subcorpus de fármacos
+El notebook demuestra:
+- Carga del modelo entrenado
+- Anonimización de textos de ejemplo
+- Resultados antes/después del proceso
 
-python -m spacy evaluate \
-  models/modelo_anonim_v2/model-best \
-  data/farmacos_test.spacy \
-  --output models/modelo_anonim_v2/results_farmacos.json
-
----
-
-## Uso del modelo para anonimizar texto
-
-Ejemplo básico:
-
-import spacy
-nlp = spacy.load("models/modelo_anonim_v2/model-best")
-
-texto = "Paciente Juan Pérez vive en Calle Mayor 12, Madrid. Se pauta ibuprofeno."
-doc = nlp(texto)
-
-anon = texto
-for ent in doc.ents:
-    anon = anon.replace(ent.text, f"[{ent.label_}]")
-
-print(anon)
-
-Salida:
-
-Paciente [NOMBRE_SUJETO_ASISTENCIA] vive en [CALLE], [TERRITORIO]. Se pauta [FARMACO].
+No es necesario reentrenar el modelo para validar el funcionamiento del sistema.
 
 ---
 
-## Uso clínico y demostración (Google Colab)
+## 7. Resultados y evaluación
 
-Este repositorio incluye un cuaderno de Google Colab desarrollado como parte del Trabajo Fin de Máster (TFM), cuyo objetivo es demostrar de forma reproducible el funcionamiento de ANONIM v2 sobre datos sintéticos.
+El modelo final alcanza métricas elevadas en el conjunto de validación del corpus MEDDOCAN, con valores de **precisión, recall y F1 superiores al 0.95** en la mayoría de las entidades clínicas evaluadas.
 
-El cuaderno implementa un flujo completo de:
+Los resultados detallados del entrenamiento y evaluación se documentan en la memoria del TFM y en la carpeta `training/`.
 
-- Descarga y carga del modelo ANONIM v2.
-- Recolección y preparación de datos clínicos en formato Excel.
-- Limpieza y estructuración del texto clínico.
-- Anonimización automática mediante reconocimiento de entidades nombradas (NER).
-- Exportación del dataset anonimizado.
+---
 
-⚠️ **Aviso importante:**  
+## 8. Aportación del Trabajo Fin de Máster
 
-Este cuaderno se proporciona exclusivamente con fines académicos y demostrativos.  
-No debe utilizarse con datos clínicos reales, ya que Google Colab procesa la información en entornos externos y no cumple los requisitos de la LOPD/RGPD para datos sanitarios.
+La contribución original de este TFM incluye:
 
-El uso clínico real de ANONIM está diseñado para realizarse en entornos locales seguros, ejecutando el modelo directamente desde este repositorio.
+- Integración práctica de modelos NER en un flujo clínico realista
+- Adaptación del modelo a texto clínico en español
+- Arquitectura reutilizable para investigación clínica
+- Enfoque explícito en anonimización ética y reproducible
+- Puente entre investigación académica y aplicación clínica real
 
-El cuaderno clínico permite:
+---
 
-1. Subir un Excel desde el ordenador
-2. Seleccionar la columna con texto clínico
-3. Aplicar ANONIM sobre cada fila
-4. Descargar un Excel con la columna anonimizada
+## 9. Licencia
+
+Este proyecto se distribuye bajo licencia **MIT**, permitiendo su reutilización académica y científica con atribución adecuada.
+
+
 
 Enlace al Colab:
 https://colab.research.google.com/drive/1RLlUBuLDNCC3J5sslut8Jt-reckdXmPl?usp=sharing
 
----
-
-## Licencia
-
-Este proyecto se distribuye bajo la licencia MIT.  
-El texto completo de la licencia se encuentra en el archivo `LICENSE` incluido en este repositorio.
 
 ---
 
