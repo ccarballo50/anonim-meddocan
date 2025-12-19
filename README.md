@@ -105,7 +105,7 @@ El proyecto es totalmente reproducible mediante:
 
 - Clonado del repositorio
 - Instalación de dependencias (`requirements.txt`)
-- Ejecución del notebook `ANONIM_TFM_Demo.ipynb` en Google Colab
+- Ejecución del notebook `ANONIM_Clinico.ipynb` en Google Colab
 
 El notebook demuestra:
 - Carga del modelo entrenado
